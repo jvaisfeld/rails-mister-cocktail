@@ -3,8 +3,8 @@
     <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
       <h1>add a dose</h1>
         <%= simple_form_for [@cocktail, @dose] do |f| %>
-          <%= f.input :description, collection: ["6 leaves", "1.33 oz", "1.5 oz", "2 cl", "4.5 cl", "9 cl"] %>
-          <%= f.input :ingredient_id, collection: Ingredient.all  %>
+          <%= f.input :description, collection: ["6 leaves", "1.33 oz", "1.5 oz", "2 cl", "4.5 cl", "9 cl"], placeholder: "4 tablespoons" %>
+          <%= f.input :ingredient_id, collection: Ingredient.all, prompt: "choose one"  %>
           <%= f.submit "add a dose", class: "btn btn-primary" %>
         <% end %>
     </div>

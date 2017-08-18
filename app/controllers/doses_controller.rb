@@ -1,9 +1,4 @@
 class DosesController < ApplicationController
-  def index
-  end
-
-  def show
-  end
 
   def new
     @dose = Dose.new
@@ -15,12 +10,6 @@ class DosesController < ApplicationController
     @dose.cocktail = Cocktail.find(params[:cocktail_id])
     @dose.save
     redirect_to cocktail_path(@dose.cocktail)
-  end
-
-  def edit
-  end
-
-  def update
   end
 
   def destroy
