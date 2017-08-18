@@ -36,6 +36,11 @@ gem 'jbuilder', '~> 2.5'
 # security
 gem 'figaro'
 
+# image upload
+gem 'cloudinary', '1.1.7'
+gem 'attachinary', github: 'assembler/attachinary'
+gem 'jquery-fileupload-rails'
+
 # frontend stuff
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
